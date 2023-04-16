@@ -1,6 +1,13 @@
 
 # Github user search
 
+// npm init -y
+// npm i --save-dev typescript
+// npx tsc --init
+// package.json "start": "tsc --watch"
+// tsconfig "outDir"
+// tsconfig "module": "es6"
+
 Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size

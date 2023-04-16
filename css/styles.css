@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Space Mono", monospace;
+  color: inherit;
 }
 
 img {
@@ -30,7 +31,6 @@ a {
 .abs { position: absolute; }
 
 
-
 body.light-mode {
   background-color: var(--bg);
   --primary: #0079ff;
@@ -40,6 +40,7 @@ body.light-mode {
   --bg: #f6f8ff;
   --bg-secondary: #fefefe;
   --theme-switch-btn-hover: #222731;
+  transition: all .1s;
   --error: #f74646;
 }
 
@@ -63,6 +64,7 @@ body.dark-mode {
   --theme-switch-btn-hover: #90a4d4;
 
   --error: #f74646;
+  transition: all .1s;
 }
 
 .primary {
@@ -101,6 +103,28 @@ body.dark-mode {
 .search-section {
   margin-bottom: 1.75rem;
 }
+
+header {
+  margin-bottom: 1rem;
+}
+
+header .theme-toggle {
+  cursor: pointer;
+  color: var(--txt-mid-contrast);
+  font-weight: 700;
+}
+
+header .theme-toggle svg {
+  transform: translateY(20%);
+  margin-left: 1rem;
+}
+
+header h1 {
+  margin-right: auto;
+  color: var(--txt-high-contrast);
+  font-size: 1.5rem;
+}
+
 form > .abs {
   right: 0.5rem;
   height: 35px;
