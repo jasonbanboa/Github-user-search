@@ -29,8 +29,8 @@ function fetchUserData(username) {
 }
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        const userData = yield fetchUserData('jasonbanboa');
-        console.log(userData);
+        const userData = yield fetchUserData('octocat');
+        console.log(userData || 'error');
     });
 }
 main();

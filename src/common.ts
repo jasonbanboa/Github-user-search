@@ -49,8 +49,8 @@ async function fetchUserData(username: string): Promise<UserData> {
 }
 
 async function main() {
-  const userData: UserData = await fetchUserData('jasonbanboa');
-  console.log(userData);
+  const userData: UserData = await fetchUserData('octocat');
+  console.log(userData || 'error');
 }
 
 main();
