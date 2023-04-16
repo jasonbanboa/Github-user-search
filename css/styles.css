@@ -41,7 +41,6 @@ body.light-mode {
   --bg-secondary: #fefefe;
   --theme-switch-btn-hover: #222731;
   transition: all .1s;
-  --error: #f74646;
 }
 
 body.light-mode .card > section, main {
@@ -62,8 +61,6 @@ body.dark-mode {
   --bg-secondary: #1e2a47;
 
   --theme-switch-btn-hover: #90a4d4;
-
-  --error: #f74646;
   transition: all .1s;
 }
 
