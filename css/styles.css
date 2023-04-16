@@ -14,6 +14,11 @@ img {
   border-radius: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex { display: flex; }
 .flex-1 { flex : 1; }
 .flex-col { flex-direction: column; }
@@ -76,6 +81,10 @@ body.dark-mode {
   color: var(--txt-low-contrast)
 }
 
+::placeholder {
+  color: var(--txt-low-contrast); 
+}
+
 #app {
   height: 100vh;
   padding: 1rem;
@@ -126,6 +135,7 @@ input[type="text"] {
 }
 
 main {
+  min-height: 392.6px;
   background-color: var(--bg-secondary);
   padding: 2rem;
   border-radius: 10px;
@@ -137,6 +147,12 @@ main > .avatar-container {
   height: 125px;
   width: 125px;
   border-radius: 50%;
+}
+
+main > .avatar-container > a {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
 }
 
 main h2 {
